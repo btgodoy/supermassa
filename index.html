@@ -716,22 +716,33 @@
 
   /* ===== RESPONSIVO ===== */
   @media(max-width:850px){
-    .hero{padding:50px 5% 90px;}
+    .hero{padding:40px 5% 80px;}
     .sobre-grid{grid-template-columns:1fr;gap:40px;}
     .hero-container{
       display:flex;
       flex-direction:column;
       gap:0;
+      align-items:center;
+      text-align:center;
     }
     .hero-text{display:contents;}
-    .hero-img{order:1;margin:25px 0 30px;}
-    .hero-text .badges{order:2;}
-    .hero-text .cta-hero{order:3;}
-    .hero-text h1{font-size:2.3rem;}
+    .hero-text h1{font-size:2.1rem;margin-bottom:15px;}
+    .hero-text .subtitulo{font-size:1.05rem;margin-bottom:0;max-width:90%;}
+    .hero-img{order:1;margin:25px 0 20px;}
+    .hero-text .badges{
+      order:2;
+      justify-content:center;
+      margin-bottom:25px;
+    }
+    .hero-text .cta-hero{
+      order:3;
+      padding:16px 38px;
+      font-size:1.05rem;
+    }
     .section-title{font-size:1.9rem;}
     nav ul{gap:15px;font-size:.9rem;}
     .preco-novo{font-size:3rem;}
-    .pacote-foto{max-width:260px;}
+    .pacote-foto{max-width:280px;}
     .cta-final h2{font-size:1.8rem;}
   }
   @media(max-width:850px){
