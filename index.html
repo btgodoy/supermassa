@@ -717,7 +717,16 @@
   /* ===== RESPONSIVO ===== */
   @media(max-width:850px){
     .hero{padding:50px 5% 90px;}
-    .hero-container,.sobre-grid{grid-template-columns:1fr;gap:40px;}
+    .sobre-grid{grid-template-columns:1fr;gap:40px;}
+    .hero-container{
+      display:flex;
+      flex-direction:column;
+      gap:0;
+    }
+    .hero-text{display:contents;}
+    .hero-img{order:1;margin:25px 0 30px;}
+    .hero-text .badges{order:2;}
+    .hero-text .cta-hero{order:3;}
     .hero-text h1{font-size:2.3rem;}
     .section-title{font-size:1.9rem;}
     nav ul{gap:15px;font-size:.9rem;}
